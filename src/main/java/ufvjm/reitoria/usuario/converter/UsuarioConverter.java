@@ -1,5 +1,6 @@
 package ufvjm.reitoria.usuario.converter;
 
+import org.springframework.stereotype.Component;
 import ufvjm.reitoria.usuario.business.dto.EnderecoDTO;
 import ufvjm.reitoria.usuario.business.dto.TelefoneDTO;
 import ufvjm.reitoria.usuario.business.dto.UsuarioDTO;
@@ -10,6 +11,7 @@ import ufvjm.reitoria.usuario.infrastructure.entity.Usuario;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class UsuarioConverter {
 
     public Usuario paraUsuario(UsuarioDTO usuarioDTO) {
